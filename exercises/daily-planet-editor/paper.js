@@ -11,10 +11,10 @@ just fix the existing ones.
 var enemies=["Lex","Batman","Darkseid","Brainiac","General Zod","Doomsday"];
     function whoWins(is_there_kryptonite,enemyName){
         if(!is_there_kryptonite) {
-            return "Superman beats" + enemyName + ", of course";
+            return "Superman beats " + enemyName + ", of course.";
         }
         else {
-            return "Depends on how quick Superman can get rid of the Kryptonite." + enemyName +"could possibly win this one.";
+            return "Depends on how quick Superman can get rid of the Kryptonite. " + enemyName + " could possibly win this one.";
         }
     }
 
@@ -31,7 +31,7 @@ for (var i = 0; i < enemies.length; i++) {
 
 function howAttractedIsLoisLaneToMe (){
     // 1 is not at all attracted, 10 is "super" attracted...
-    return math.floor((math.random()*10)+1);
+    return Math.floor((Math.random()*10)+1);
     }
 
 console.log(howAttractedIsLoisLaneToMe());
@@ -42,7 +42,7 @@ var superman=false;
 while (clarkKent){
     console.log("I'm just a nerdy columnist");
 
-var phoneBoothQuickChange = math.random();
+var phoneBoothQuickChange = Math.random();
     if (phoneBoothQuickChange >= 0.5) {
         clarkKent=false;
         superman=true;
